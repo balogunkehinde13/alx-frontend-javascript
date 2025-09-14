@@ -43,8 +43,8 @@ class Teacher implements TeacherInterface {
 }
 
 // Factory function to create either Director or Teacher based on salary
-function createEmployee(salary: number | string): Director | Teacher {
-  if (typeof salary === "number" && salary < 500) {
+function createEmployee(salary: number ): Director | Teacher {
+  if ( salary < 500) {
     return new Teacher();
   }
   return new Director();
