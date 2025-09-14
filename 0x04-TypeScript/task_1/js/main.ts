@@ -14,6 +14,6 @@ interface Director extends Teacher {
   numberOfReports: number;  // Additional required property for Directors
 }
 
-interface printTeacherFunction {
+interface printTeacher {
   (firstName: string, lastName: string): string;
 }
