@@ -44,7 +44,7 @@ class Teacher implements TeacherInterface {
 
 // Factory function to create either Director or Teacher based on salary
 function createEmployee(salary: number ): Director | Teacher {
-  if ( salary < 500) {
+  if (salary < 500) {
     return new Teacher();
   }
   return new Director();
