@@ -53,7 +53,7 @@ function createEmployee(salary: number ): Director | Teacher {
 type Subjects = "Math" | "History";
 
 // Function that takes a Subjects type and returns appropriate message
-function teachClass(todayClass: Subjects): string {
+function teachClass(todayClass:Subjects): string {
   if (todayClass === "Math") {
     return "Teaching Math";
   }
