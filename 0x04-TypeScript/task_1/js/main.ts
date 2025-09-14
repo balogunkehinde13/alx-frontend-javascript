@@ -14,6 +14,12 @@ interface Director extends Teacher {
   numberOfReports: number;  // Additional required property for Directors
 }
 
-interface printTeacher {
+// Function interface - defines the shape/signature of a function
+interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
+
+// Function implementation that matches the interface
+const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => {
+  return `${firstName}. ${lastName}`;
+};
